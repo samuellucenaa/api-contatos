@@ -1,7 +1,9 @@
 import express from 'express';
 import { readFile, writeFile } from 'fs/promises';
+import routerContatos from './pegar-contatos.js';
 
 const router = express.Router()
+router.use(routerContatos)
 
 router.get('/', (req, res)=>{
     res.json('Hi')
