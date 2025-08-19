@@ -1,0 +1,30 @@
+{
+  "name": "api-contatos",
+  "version": "1.0.0",
+  "description": "<h1>Teste</h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuellucenaa/api-contatos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/samuellucenaa/api-contatos/issues"
+  },
+  "homepage": "https://github.com/samuellucenaa/api-contatos#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  }
+}
