@@ -1,16 +1,11 @@
 import express from 'express'
-import { readFile } from 'fs/promises'
+import { pegarContatos } from '../services/contatos.js'
 
 const router = express.Router()
 
 router.get('/contatos', async (req, res)=>{
     
-    let lista: string[] = []
-    
-    try{
-        let contatos: string = await readFile('./data/lista.txt', {encoding: 'utf8'})
-        lista = contatos.split('\n')
-    } catch(error){}
+    let lista = await pegarContatos();
     
     res.json({lista})
 })
