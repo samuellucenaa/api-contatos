@@ -10,7 +10,7 @@ router.use(routerInserir)
 router.use(routerDeletar)
 
 router.get('/', (req, res)=>{
-    res.json('Hi')
+    res.json('Teste')
 })
 
 export default router
